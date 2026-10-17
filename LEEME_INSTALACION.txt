@@ -1,0 +1,42 @@
+PEQUEAVENTURA - VERSION INSTALABLE (PWA)
+=======================================
+
+Esta carpeta contiene el juego completo, incluida la mejora para escribir
+los resultados de las operaciones por columnas DE DERECHA A IZQUIERDA.
+
+ARCHIVOS
+- index.html: el juego, sus ejercicios, perfiles y avatar.
+- manifest.webmanifest: informacion para instalar la aplicacion.
+- sw.js: permite abrir la aplicacion sin internet tras la primera carga.
+- icons/: iconos para Android, iPhone/iPad y ordenador.
+
+COMO PUBLICAR E INSTALAR
+1. Descomprime el ZIP.
+2. Sube TODOS los archivos conservando la estructura de carpetas a un
+   hosting web que utilice HTTPS. index.html, sw.js y manifest.webmanifest
+   deben quedar en la misma carpeta, y la carpeta icons/ junto a ellos.
+3. Abre la direccion de tu web desde el navegador. Espera a que cargue
+   completamente al menos una vez con conexion a Internet.
+4. Android: abre el menu del navegador y elige Instalar aplicacion.
+   iPhone/iPad: en Safari pulsa Compartir > Anadir a pantalla de inicio.
+   PC: utiliza la opcion Instalar en Chrome/Edge, si esta disponible.
+5. Tras la primera visita, podras abrir el juego sin conexion en el mismo
+   dispositivo siempre que el navegador conserve los datos del sitio.
+
+IMPORTANTE
+- Abrir index.html por separado con doble clic (file://) permite jugar,
+  pero NO activa la instalacion PWA ni el service worker. Requiere HTTPS
+  (o localhost para pruebas).
+- El progreso se guarda en el navegador de cada dispositivo y no se
+  sincroniza automaticamente. Utiliza la funcion Guardar copia de los
+  progresos para mantener copias de seguridad antes de borrar datos o
+  cambiar de movil/ordenador.
+- Si publicas una actualizacion, actualiza tambien la version de
+  CACHE_NAME en sw.js, por ejemplo cambiando -v1 por -v2.
+- No elimines manifest.webmanifest, sw.js ni la carpeta icons/.
+
+
+ICONO DE LA APLICACION
+Se ha actualizado el icono de la pestaña, el icono de instalacion PWA, el icono de iPhone/iPad y el icono adaptable con la ilustracion nueva de PequeAventura.
+
+Para ver el nuevo icono en una PWA ya instalada, actualiza los archivos del servidor y, si el dispositivo conserva el icono antiguo, elimina el acceso instalado y vuelve a instalar la aplicacion.

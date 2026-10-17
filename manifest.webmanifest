@@ -1,0 +1,38 @@
+{
+  "id": "./",
+  "name": "PequeAventura - Matemáticas y Lengua",
+  "short_name": "PequeAventura",
+  "description": "Juego educativo para 2.º de Primaria con Matemáticas, Lengua, personajes, recompensas y progreso individual.",
+  "lang": "es",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f8ff",
+  "theme_color": "#6861ed",
+  "categories": [
+    "education",
+    "kids",
+    "games"
+  ],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
